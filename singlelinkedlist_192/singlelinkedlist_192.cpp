@@ -8,4 +8,4 @@ struct Node
 	Node* next;
 };
 
-Node* START = NULL;
+Node* START = NULL; 
