@@ -10,7 +10,7 @@ struct Node
 
 Node* START = NULL; 
 
-void addNote() {
+void addNode() {
 	int nim;
 	string nama;
 	Node* nodeBaru = new Node();
@@ -145,6 +145,12 @@ int main() {
 			switch (pilihan)
 			{
 			case 1:
+				addNode();
+				cout << "Data Berhasil Ditambahkan" << endl;
+				system("pause");
+				system("cls");
+				break;
+
 
 		
 
