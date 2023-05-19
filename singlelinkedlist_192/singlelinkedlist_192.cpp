@@ -21,7 +21,7 @@ void addNote() {
 	nodeBaru->noMhs = nim;
 	nodeBaru->name = nama;
 
-	if (START ==NULL || nim <= START->noMhs) {
+	if (START == NULL || nim <= START->noMhs) {
 		if (START != NULL && nim == START->noMhs) {
 			cout << " Nim sudah ada" << endl;
 			return;
@@ -31,9 +31,18 @@ void addNote() {
 		Node* current = START;
 		Node* previous = START;
 
-		while ((current != NULL ) && (nim >= current->noMhs))
+		while ((current != NULL) && (nim >= current->noMhs))
 
 			if (nim == current->noMhs) {
 				cout << "Nim sudah ada" << endl;
 				return;
-			} 
+			}
+
+		previous = currrent;
+		current = current->next;
+	}
+
+	nodeBaru->next = current;
+	previous->next = nodeBaru;
+}
+}
