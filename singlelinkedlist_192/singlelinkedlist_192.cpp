@@ -32,6 +32,7 @@ void addNote() {
 		Node* previous = START;
 
 		while ((current != NULL) && (nim >= current->noMhs))
+		{
 
 			if (nim == current->noMhs) {
 				cout << "Nim sudah ada" << endl;
