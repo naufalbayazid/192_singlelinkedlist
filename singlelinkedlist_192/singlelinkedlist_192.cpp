@@ -104,6 +104,15 @@ void | raverse() {
 		}
 	}
 }
+
+void searchData() {
+	if (listEmpty()) {
+		cout << "Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	else {
 		
 
 
